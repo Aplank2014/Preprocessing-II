@@ -1,10 +1,11 @@
 // Mixins in here
 @border-line: 2px dashed lightgray;
 
-.box-spacing {
-    margin: 1%;
-    padding: 2%;
+.spacing(@m, @p) {
+    margin: @m;
+    padding: @p;
   }
+
   .flex-center {
     display: flex;
     justify-content: center;
