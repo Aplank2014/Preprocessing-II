@@ -1,38 +1,88 @@
-
-  .content-section {
-    margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 4%;
-    justify-content: space-between;
-    flex-direction: row;
+.funBusPic {
+  border-radius: 10px;
+}
+.welcome {
+  margin-top: 2%;
+}
+.content-section {
+  display: flex;
+  justify-content: space-between;
+  .text-content1 {
+    width: 48%;
+    @media @mobile {
+      flex-direction: column;
+      width: 100%;
+    }
   }
-   
-    .text-content {
-      width: 40%;
-      padding-right: 1%;
-    }
 
-    .img-content {
-      width: 40%;
-      padding-right: 1%;
-    }
+.img-content1 {
+  width: 40%;
+  padding-right: 1%;
+  border-radius: 10px;
+  display: flex;
+  @media @mobile {
+    flex-direction: column;
+    width: 100%;
+  }
+  }
+}
 
-
-  .content-destination {
-    margin: 0 auto 30px;
+.content-section-inverse-content{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  .img-content2 {
+    max-width: 100%;
+    min-width: 100px;
+    height: auto;
+    border-radius: 10px;
+    @media @mobile {
+      width: 100%;
     
+  }
+}
+    .text-content2 {
+      display: flex;
+    
+      width: 40%;
+      @media @mobile {
+        flex-direction: column;
+        width: 100%;
+      
+      }
+    }
+}
+  .content-destination {
+    align-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-top: 2%;
     img {
       border-radius: 10px;
+      @media @mobile {
+      max-width: 100%;
+      min-width: 100px;
+      height: auto;
+      }
     }
   }
 
     .content-pick {
       padding-top: 10px;
+      padding-bottom: 10px;
       display: flex;
       justify-content: space-between;
+      @media @mobile {
+        flex-direction: column;
+      }
       .destination {
       justify-content: space-between;
+      margin: 2%;
+      flex-direction: row;
+      @media @mobile {
+        width: 100%;
+        flex-direction: column;
+      }
       }
 }
 
@@ -52,4 +102,8 @@ hr {
     border-radius: 40px;
     padding: 5%;
     text-align: center;  
+    @media @mobile {
+      width: 100%;
+      font-size: 2em;
+    }
   }
