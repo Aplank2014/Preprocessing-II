@@ -1,8 +1,5 @@
 
   header {
-    margin: 0 auto;
-    width: 100%;
-    padding: 20px;
     .flex-center(space-between, baseline);
     @media @mobile {
         width: 100%;
@@ -11,7 +8,8 @@
 }
 
 header .mainHeader{ 
-    .flex-center(space-between, baseline);
+    .flex-center(space-around, baseline);
+    margin-left: 18%;
     @media @mobile {
         width: 100%;
         flex-direction: column;
@@ -22,8 +20,8 @@ header .mainHeader{
 
 nav {
         font-size: 15px;
-        .flex-center(space-between, baseline);
-        margin-right: 17%;
+        .flex-center(space-around, baseline);
+        margin-right: 18%;
         @media @mobile {
             width: 100%;
             align-content: center;

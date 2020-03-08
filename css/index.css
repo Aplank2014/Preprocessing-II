@@ -156,9 +156,6 @@ img {
   margin: 0 auto;
 }
 header {
-  margin: 0 auto;
-  width: 100%;
-  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -171,8 +168,9 @@ header {
 }
 header .mainHeader {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: baseline;
+  margin-left: 18%;
 }
 @media ( max-width: 500px ) {
   header .mainHeader {
@@ -185,9 +183,9 @@ header .mainHeader {
 nav {
   font-size: 15px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: baseline;
-  margin-right: 17%;
+  margin-right: 18%;
 }
 @media ( max-width: 500px ) {
   nav {
@@ -222,37 +220,59 @@ a {
 .content-section {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+@media ( max-width: 500px ) {
+  .content-section {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
 }
 .content-section .text-content1 {
-  width: 48%;
+  width: 47%;
+  padding-right: 2%;
 }
 @media ( max-width: 500px ) {
   .content-section .text-content1 {
+    display: flex;
     flex-direction: column;
     width: 100%;
   }
 }
 .content-section .img-content1 {
-  width: 40%;
-  padding-right: 1%;
+  width: 47%;
+  padding-left: 2%;
+}
+.content-section .img-content1 img {
   border-radius: 10px;
-  display: flex;
 }
 @media ( max-width: 500px ) {
   .content-section .img-content1 {
-    flex-direction: column;
     width: 100%;
   }
 }
 .content-section-inverse-content {
+  padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
-  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+@media ( max-width: 500px ) {
+  .content-section-inverse-content {
+    display: flex;
+    width: 100%;
+    flex-direction: column-reverse;
+  }
 }
 .content-section-inverse-content .img-content2 {
-  max-width: 100%;
-  min-width: 100px;
-  height: auto;
+  width: 48%;
+  padding-left: 1%;
+}
+.content-section-inverse-content .img-content2 img {
   border-radius: 10px;
 }
 @media ( max-width: 500px ) {
@@ -261,11 +281,12 @@ a {
   }
 }
 .content-section-inverse-content .text-content2 {
-  display: flex;
-  width: 40%;
+  width: 48%;
+  padding-right: 1%;
 }
 @media ( max-width: 500px ) {
   .content-section-inverse-content .text-content2 {
+    display: flex;
     flex-direction: column;
     width: 100%;
   }
